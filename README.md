@@ -98,7 +98,28 @@ The pipeline addresses three research questions (RQ1, RQ2, RQ3):
   Summarizes Bandit issues by severity and top 5 vulnerabilities.
 
 **JavaScript linting:**  
-ESLint (`eslint:recommended` + security plugins), JSHint, StandardJS.  
+
+We use three linters for JavaScript snippets:  
+
+- **ESLint** with the `eslint:recommended` ruleset + security plugins  
+- **JSHint** with default configuration  
+- **StandardJS** with default strict style  
+
+To run them manually:  
+
+```bash
+# 1. ESLint (recommended rules + security plugins)
+npx eslint --config eslint:recommended \
+  --plugin security --plugin no-unsanitized \
+  path/to/snippets/**/*.js
+
+# 2. JSHint (default configuration)
+npx jshint path/to/snippets/**/*.js
+
+# 3. StandardJS (opinionated style guide)
+npx standard path/to/snippets/**/*.js
+```
+
 Findings grouped into Code Style, Code Smell, Potential Bug, Vulnerability.
 
 **Example RQ1 output snippet (pylint_analysis_summary.csv):**  
