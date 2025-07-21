@@ -37,6 +37,10 @@ The pipeline addresses three research questions (RQ1, RQ2, RQ3):
 4. **ESLint Configuration**  
    - `step5_compare_linters.py` auto-generates a `.eslintrc.json` if missing.
 
+5. **Snapshot**
+  - Retrieve "Snapshot_20230831" from DevGPT github
+  - https://github.com/NAIST-SE/DevGPT/tree/main/snapshot_20230831
+
 ---
 
 ## 1. Requirements
