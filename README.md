@@ -266,6 +266,7 @@ python PylintExec.py
 python Flake8Categorize.py
 python BanditCategorize.py
 python BanditAnalyze.py
+# Note: Requires manual JS linting besides provided code, as seen in section 2
 ```
 
 **RQ2 - Quality of reused GitHub code:**  
