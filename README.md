@@ -4,12 +4,6 @@ This project extracts, filters, and analyzes ChatGPT-generated Python and JavaSc
 It validates syntax, categorizes snippets, runs linters and security tools, and analyzes how 
 developers reuse and modify the snippets over time in GitHub repositories.
 
-The pipeline addresses three research questions (RQ1, RQ2, RQ3):
-
-- **RQ1:** Quality of ChatGPT-generated code (syntax & linting issues)  
-- **RQ2:** Quality of reused code fetched from GitHub  
-- **RQ3:** How reused code evolves through commits (fixed vs introduced issues)  
-
 ---
 
 ## 0. Setup Notes
